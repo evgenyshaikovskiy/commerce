@@ -5,7 +5,7 @@ import { CartContext } from "../../contexts/cart.context";
 import "./cart-icon.styles.scss";
 
 const CartIcon = () => {
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
 
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
 
@@ -16,7 +16,7 @@ const CartIcon = () => {
         src={process.env.PUBLIC_URL + "/shopping-bag.svg"}
         alt="cart-icon"
       />
-      <span className="item-count">0</span>
+      <span className="item-count">{cartCount}</span>
     </div>
   );
 };
