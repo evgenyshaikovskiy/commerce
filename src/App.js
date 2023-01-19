@@ -1,7 +1,7 @@
-import Directory from "./components/directory/directory.component";
+import Home from "./components/routes/home/home.component";
 
 const App = () => {
-  return <Directory></Directory>;
+  return <Home></Home>;
 };
 
 export default App;
